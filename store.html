@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>Tienda</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./css/styles.css">
+
+</head>
+<script src="./js/datos.js"></script>
+<script src="./js/carrito.js"></script>
+<script src="./js/store.js"></script>
+
+<body>
+
+	<nav class="navbar navbar-light bg-light">
+		<a class="navbar" href="#">
+			<h2 class="text-danger">Comprar productos Nexxos</h2>
+		</a>
+		<a class="navbar-brand" href="./about.html">
+			<h2 class="text-danger">Acerca de mi </h2>
+		</a>
+		<a class="navbar-brand" href="./home.html">
+			<h2 class="text-danger">Inicio</h2>
+		</a>
+
+
+		<select id="criteriosOrdenacion"></select>
+
+		<img src="assets/cart.png" height="50px">
+	</nav>
+
+	<br>
+
+
+	<div class="contenedorPadre">
+		<div id="container" class="contenedorHijo">
+
+
+		</div>
+	</div>
+
+	<dialog id="miDialogo">
+		<div id="dialogHead">
+			<h2> <span id="idPedido" class="h5"></span>
+				<h2>
+		</div>
+		<div id="dialogContent">
+		</div>
+		<div id="dialogFooter">
+			<h3 class="text-right">Total: <span id="total"></span></h3>
+		</div>
+		<div class="text-center">
+			<button id="btnCierraDialog" class="btn btn-secondary">Seguir comprando</button>
+			<button id="btnEfectuaPedido" class="btn btn-info">Efectuar pedido</button>
+		</div>
+	</dialog>
+
+
+</body>
+
+</html>
